@@ -2,18 +2,23 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Machine à invoquer</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-		<section>
+		<!-----------------------
+			ECRAN 1 - FORMULAIRE
+			Affiché au départ
+			Caché quand on clique sur "Invoquer"
+			------------------------->
+		<section> 
 			<h1>La Machine à Invocation</h1>
 
 			<form id="invocation">
 				<p> <!---------ZONE PRENOM------------>
-					<label for="prenom">Ton prénom :</label><br />
+					<label for="prenom">Donne-moi ton prénom :</label><br />
 					<input type="text" name="prenom" id="prenom" required /> <!--Pour lier le "label" au champ, on lui donne un attribut "for" qui a la même valeur que l' "id" du champ-->
 				</p>
 				<p> <!--------ZONE CHOIX CREATURE------>
@@ -29,8 +34,17 @@
 					<button id="invoquer">Invoquer !</button>
 				</p>
 			</form>
-
 		</section>
+
+		<!-----------------------
+			ECRAN 2 - RESULTATS
+			Caché au départ
+			Affiché après avoir cliqué sur "Invoquer"
+			------------------------->
+		<section id="resultat" class="cache">
+			<p id="message"></p>
+		</section>
+
 
 	<script src="script.js" defer></script>
 </body>
