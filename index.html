@@ -8,16 +8,29 @@
 
 <body>
 
+		<section>
+			<h1>La Machine à Invocation</h1>
 
+			<form id="invocation">
+				<p> <!---------ZONE PRENOM------------>
+					<label for="prenom">Ton prénom :</label><br />
+					<input type="text" name="prenom" id="prenom" required /> <!--Pour lier le "label" au champ, on lui donne un attribut "for" qui a la même valeur que l' "id" du champ-->
+				</p>
+				<p> <!--------ZONE CHOIX CREATURE------>
+					<label for="creature">Choisis ta créature :</label><br />
+					<select name="creature" id="creature">
+						<option value="chat">😸 le Chat-Octo</option>
+						<option value="dragon">🐉 le Dragon-Debug</option>
+						<option value="licorne">🦄 la Licorne-CSS</option>
+						<option value="renard">🦊 le Renard-Refacto</option>
+					</select>
+				</p>
+				<p> <!----------ZONE BOUTON---------->
+					<button id="invoquer">Invoquer !</button>
+				</p>
+			</form>
 
-
-
-
-
-
-
-
-
+		</section>
 
 	<script src="script.js" defer></script>
 </body>
