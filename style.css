@@ -1,0 +1,72 @@
+/* ════════════════════════════════════════════
+   STYLE GENERAL
+════════════════════════════════════════════ */
+@font-face {
+	font-family: "PuppiesPlay-Regular";
+	src: url("fonts/PuppiesPlay-Regular.ttf");
+}
+
+/* La classe .cache masque un écran */
+.cache {
+  display: none;
+}
+
+body {
+	background-color: #FF84B7;
+	font-family: "PuppiesPlay-Regular", sans-serif;
+	display : flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	margin: 0;
+}
+
+h1 {
+	font-size: 4em;
+	color: #1982C4;
+}
+
+section {
+	width: 80%;
+	max-width: 500px;
+	background-color: #FFDDE1;
+	border-radius: 10px;
+	padding: 10px;
+	text-align: center;
+	border: 5px solid #FF595E;
+}
+
+label {
+	font-size: 3em;
+	color: #1982C4;
+}
+
+input, select {
+	font-family: inherit;
+	font-size: 2em;
+	color: #1982C4;
+}
+
+input {
+	box-sizing: border-box;
+	width: 65%;
+	border-radius: 10px;
+	border: 2px solid #1982C4;
+}
+
+select {
+	width: 65%;
+	border-radius: 10px;
+	border: 2px solid #1982C4;
+}
+
+button {
+	width: 50%;
+	font-family: inherit;
+	font-size: 3em;
+	color: #FF595E;
+	font-weight: bold;
+	background: linear-gradient(to bottom right, #1982C4, #FF595E);
+	border-radius: 10px;
+	border: 2px solid #1982C4;
+}
