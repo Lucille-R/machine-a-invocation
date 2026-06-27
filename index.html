@@ -13,10 +13,10 @@
 			Affiché au départ
 			Caché quand on clique sur "Invoquer"
 			------------------------->
-		<section> 
+		<section id="formulaire"> 
 			<h1>La Machine à Invocation</h1>
 
-			<form id="invocation">
+			<form id="invocation">		
 				<p> <!---------ZONE PRENOM------------>
 					<label for="prenom">Donne-moi ton prénom :</label><br />
 					<input type="text" name="prenom" id="prenom" required /> <!--Pour lier le "label" au champ, on lui donne un attribut "for" qui a la même valeur que l' "id" du champ-->
@@ -24,10 +24,10 @@
 				<p> <!--------ZONE CHOIX CREATURE------>
 					<label for="creature">Choisis ta créature :</label><br />
 					<select name="creature" id="creature">
-						<option value="chat">😸 le Chat-Octo</option>
-						<option value="dragon">🐉 le Dragon-Debug</option>
-						<option value="licorne">🦄 la Licorne-CSS</option>
-						<option value="renard">🦊 le Renard-Refacto</option>
+						<option value="le Chat-Octo">😸 le Chat-Octo</option>
+						<option value="le Dragon-Debug">🐉 le Dragon-Debug</option>
+						<option value="la Licorne-CSS">🦄 la Licorne-CSS</option>
+						<option value="le Renard-Refacto">🦊 le Renard-Refacto</option>
 					</select>
 				</p>
 				<p> <!----------ZONE BOUTON---------->
@@ -43,6 +43,7 @@
 			------------------------->
 		<section id="resultat" class="cache">
 			<p id="message"></p>
+			<img id="imageCreature" src="" alt="">
 		</section>
 
 
